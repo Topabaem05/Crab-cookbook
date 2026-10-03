@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crab-cookbook"
+version = "0.1.0"
+description = "ShoreCrab inference clients, local serving and practical examples"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+dependencies = []
+
+[project.optional-dependencies]
+serve = ["torch==2.10.0", "torchvision==0.25.0", "timm==1.0.30", "transformers==4.57.6", "safetensors>=0.4,<1", "pillow>=10,<13", "numpy>=1.26,<3", "sentencepiece>=0.2,<1"]
+test = ["pytest>=8,<10", "pillow>=10,<13"]
+
+[project.scripts]
+crab-serve = "shorecrab.server:main"
+
+[tool.setuptools.packages.find]
+include = ["shorecrab*"]
+
+[project.entry-points."vllm.general_plugins"]
+shorecrab_a60 = "shorecrab.native.vllm_register:register"

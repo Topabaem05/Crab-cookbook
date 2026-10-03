@@ -1,0 +1,141 @@
+{
+  "checkpoint_sha256": "427fbf2559e470543e19578b3f9a831c6cfed62782cbf91b4e04cad928aee3bb",
+  "platform": "macOS Apple Silicon",
+  "scope": "Procedural scene, 320x200 and 960x600, 2/4/16 candidates, original complete A60 forward; not task accuracy or a speed benchmark",
+  "vllm": {
+    "passed": true,
+    "engine_revision": "5f30fc7031cae49bf51073fc953d419b08f8887c",
+    "torch": "2.13.0",
+    "device": "cpu",
+    "dtype": "float32",
+    "elapsed_seconds": 81.17835270799696,
+    "cases": [
+      {
+        "case": "320x200-2",
+        "max_abs_probability_error": 0.0,
+        "probabilities": [
+          0.5828309059143066,
+          0.41716912388801575,
+          0.0
+        ]
+      },
+      {
+        "case": "320x200-4",
+        "max_abs_probability_error": 0.0,
+        "probabilities": [
+          0.342014342546463,
+          0.24480140209197998,
+          0.16024096310138702,
+          0.2529433071613312,
+          0.0
+        ]
+      },
+      {
+        "case": "960x600-4",
+        "max_abs_probability_error": 0.0,
+        "probabilities": [
+          0.3310195207595825,
+          0.26559531688690186,
+          0.1570742279291153,
+          0.24631096422672272,
+          0.0
+        ]
+      },
+      {
+        "case": "960x600-16",
+        "max_abs_probability_error": 0.0,
+        "probabilities": [
+          0.11982772499322891,
+          0.0961444228887558,
+          0.05686023458838463,
+          0.08916361629962921,
+          0.08051912486553192,
+          0.05280739441514015,
+          0.08145435154438019,
+          0.08990956842899323,
+          0.1320081353187561,
+          0.06060873717069626,
+          0.02202700451016426,
+          0.030038902536034584,
+          0.03150048479437828,
+          0.038326602429151535,
+          0.00497638713568449,
+          0.013827303424477577,
+          0.0
+        ]
+      }
+    ]
+  },
+  "llama_cpp": {
+    "passed": true,
+    "llama_cpp_revision": "cb7934c52ca8710994b2ecc19775ebefcfdb8d01",
+    "device": "cpu",
+    "dtype": "float32",
+    "gguf_sha256": "7603e4ffc1aacc871ee7ec74a72e89c2bd2677ebac1fb44fe580a665281345d7",
+    "cases": [
+      {
+        "case": "320x200-2",
+        "max_abs_probability_error": 1.1921430664862953e-07,
+        "max_abs_logit_error": 8.106547241037987e-06,
+        "seconds": 2.090570917003788,
+        "probabilities": [
+          0.5828307867,
+          0.4171692431,
+          0
+        ]
+      },
+      {
+        "case": "320x200-4",
+        "max_abs_probability_error": 5.066386687957447e-07,
+        "max_abs_logit_error": 7.62954724109477e-06,
+        "seconds": 1.3467605419573374,
+        "probabilities": [
+          0.3420140147,
+          0.2448011488,
+          0.160240978,
+          0.2529438138,
+          0
+        ]
+      },
+      {
+        "case": "960x600-4",
+        "max_abs_probability_error": 2.0861309812936213e-07,
+        "max_abs_logit_error": 4.768609741301333e-06,
+        "seconds": 6.673373874975368,
+        "probabilities": [
+          0.3310193419,
+          0.2655955255,
+          0.1570741385,
+          0.2463109493,
+          0
+        ]
+      },
+      {
+        "case": "960x600-16",
+        "max_abs_probability_error": 1.0430930374311087e-07,
+        "max_abs_logit_error": 6.1989072021040315e-06,
+        "seconds": 6.656197209027596,
+        "probabilities": [
+          0.1198276579,
+          0.09614450485,
+          0.05686020106,
+          0.08916355669,
+          0.08051907271,
+          0.05280743912,
+          0.08145433664,
+          0.08990955353,
+          0.13200818,
+          0.06060884148,
+          0.02202703431,
+          0.03003886715,
+          0.03150049597,
+          0.03832659498,
+          0.004976376891,
+          0.01382729784,
+          0
+        ]
+      }
+    ],
+    "integration": "A60 graph compiled into libllama; exported llama_shorecrab_eval; dedicated CLI"
+  }
+}

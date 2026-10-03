@@ -1,0 +1,4 @@
+{
+  "llama.cpp": {"repository":"https://github.com/ggml-org/llama.cpp","revision":"cb7934c52ca8710994b2ecc19775ebefcfdb8d01"},
+  "vllm": {"repository":"https://github.com/vllm-project/vllm","revision":"5f30fc7031cae49bf51073fc953d419b08f8887c"}
+}
