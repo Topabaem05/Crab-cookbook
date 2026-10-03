@@ -25,3 +25,5 @@ Send `Authorization: Bearer $CRAB_API_KEY` when the server has that environment 
 | 401 | Missing or invalid configured API key |
 | 404 | Unknown route |
 | 500 | Inference failed; no partial decision is returned |
+
+The Python client offers `score(...)` for the complete result and `choose(...)` for the largest candidate-or-None probability. [Output-mode examples](output-modes.md) cover HTTP, vLLM and the llama.cpp extension.

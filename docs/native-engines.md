@@ -11,6 +11,8 @@ The llama.cpp path requires this extension build. Standard upstream `llama-cli`,
 
 [Version pins](../native/versions.json) identify the exact source revisions. [Validation](native-validation.json) records the checks and measured numerical differences. These checks establish implementation agreement, not task accuracy or a latency benchmark.
 
+Both engines expose `--output-mode probabilities` and `--output-mode select`. See [the two complete examples per engine](output-modes.md). The default `full` output retains the original interface.
+
 ## vLLM
 
 Use a separate Python environment from the cookbook's `serve` extra, since this vLLM revision requires PyTorch 2.13.0.

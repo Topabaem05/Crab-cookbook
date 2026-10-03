@@ -2,46 +2,81 @@
 
 # Crab-cookbook
 
-ShoreCrab의 이미지 판단을 Python·HTTP로 호출하고 애플리케이션에 연결하는 예제입니다. 이미지, 질문, 2–16개 후보를 입력하면 후보별 확률과 “해당 없음” 확률을 반환합니다.
+**ShoreCrab-128M (A60) is a compact visual decision model for applications with explicit answer choices.** Give it an image, a question and 2–16 candidates. It returns a probability for every candidate and an additional “none of these” outcome.
 
-[모델 카드](https://huggingface.co/Haverbex/ShoreCrab-128M) · [Technical Report](https://app.notion.com/p/3ede9d745acc80b0ab0ec91cd9e96ecb) · [API](docs/api.md) · [활용 사례](docs/use-cases.md)
+[Model card](https://huggingface.co/Haverbex/ShoreCrab-128M) · [Technical report](https://app.notion.com/p/3ede9d745acc80b0ab0ec91cd9e96ecb) · [Two output modes](docs/output-modes.md) · [Native engines](docs/native-engines.md) · [API](docs/api.md) · [Use cases](docs/use-cases.md)
 
-## 빠른 시작
+## Two ways to consume a decision
 
-Python 3.11 이상에서 설치합니다. 클라이언트만 사용하면 모델 실행 라이브러리가 필요하지 않습니다.
+Both modes use the same A60 inference result. Both require your candidate answers; A60 does not generate new answer text.
+
+| Mode | Returned information | Use it for |
+|---|---|---|
+| Probabilities | The complete candidate distribution and None probability | Score displays, routing logic and application-specific review rules |
+| Selection | The highest-probability candidate, or None | A single discrete application decision |
+
+The probabilities are uncalibrated model outputs. A winning None outcome is preserved instead of forcing a candidate. Neither output is a validated safety confidence.
+
+## Quick start: Python and HTTP
+
+Python 3.11 or later is required. The client itself has no model-library dependencies.
 
 ```bash
 python -m pip install -e .
 export CRAB_BASE_URL=http://127.0.0.1:8090
-python examples/ask_image.py assets/kitchen.png
 ```
 
-실행 중인 ShoreCrab 서버 주소가 필요합니다. 외부 서버가 API 키를 요구하면 `CRAB_API_KEY`를 설정하세요.
+Point the client at a running ShoreCrab server. Set `CRAB_API_KEY` if that server requires authentication.
+
+### 1. Return all probabilities
+
+```python
+from shorecrab import CrabClient
+from shorecrab.outputs import probability_view
+
+client = CrabClient("http://127.0.0.1:8090")
+choices = ["white", "red", "blue", "black"]
+result = client.score("assets/kitchen.png", "What color is the mug?", choices)
+scores = probability_view(choices, result)
+for answer, probability in zip(scores["choices"], scores["probabilities"]):
+    print(answer, probability)
+print("None:", scores["none_probability"])
+```
+
+### 2. Select the highest-probability answer
 
 ```python
 from shorecrab import CrabClient
 
 client = CrabClient("http://127.0.0.1:8090")
-result = client.score(
+selected = client.choose(
     "assets/kitchen.png",
     "What color is the mug?",
     ["white", "red", "blue", "black"],
 )
-print(result["answer"], result["probabilities"], result["none_probability"])
+print(selected["answer"], selected["probability"])
+# answer is None when the model's None outcome wins.
 ```
 
-## 로컬에서 모델 실행
+Run the complete examples:
 
-사용 권한이 있는 A60 추론 번들을 지정합니다. 이 저장소에는 모델 가중치가 포함되지 않으며, 모델 카드 링크는 가중치 다운로드가 제공된다는 의미가 아닙니다.
+```bash
+python examples/return_probabilities.py assets/kitchen.png
+python examples/select_answer.py assets/kitchen.png
+```
+
+## Run the model locally
+
+You need an authorized A60 inference bundle. Weights are not included in this repository; the model-card link does not imply that weight downloads are currently available.
 
 ```bash
 python -m pip install -e '.[serve]'
 crab-serve --bundle /path/to/a60-inference-bundle --device cpu
 ```
 
-번들은 `manifest.json`, `model.safetensors`, `tokenizer/`로 구성됩니다. 로더는 매니페스트의 SHA256을 확인하고, 모델을 FP32로 실행합니다. 선택한 장치를 사용할 수 없으면 다른 장치로 자동 전환하지 않습니다.
+A bundle contains `manifest.json`, `model.safetensors` and `tokenizer/`. The loader verifies file SHA256 values and executes in FP32. It does not silently fall back to another device.
 
-Apple Silicon에서 GPU를 사용하려면:
+For the PyTorch server on Apple Silicon:
 
 ```bash
 PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.6 \
@@ -49,22 +84,37 @@ PYTORCH_MPS_LOW_WATERMARK_RATIO=0.5 \
 crab-serve --bundle /path/to/a60-inference-bundle --device mps
 ```
 
-## llama.cpp · vLLM에서 직접 실행
+## Native llama.cpp and vLLM
 
-vLLM 등록 모델과 llama.cpp의 `libllama` 확장 API를 제공합니다. 이미지·텍스트 인코더와 선택지 점수 계산을 엔진 내부에서 실행합니다. 검증 범위는 Apple Silicon CPU FP32이며, llama.cpp는 전용 확장 빌드가 필요합니다. 설치·변환·호출 명령은 [네이티브 엔진 가이드](docs/native-engines.md)에 있습니다.
+The native paths execute A60's image encoder, text encoder and candidate-scoring graph inside each engine. Use the pinned **custom llama.cpp extension build** or the **registered vLLM pooling model**. Validation covers macOS Apple Silicon CPU FP32. Standard upstream `llama-server`, chat completions, GPU kernels and quantization are not claimed supported.
 
-## 예제
+After following the [installation and conversion guide](docs/native-engines.md), choose either output mode:
 
 ```bash
-python examples/ask_image.py assets/kitchen.png --question '컵은 무슨 색인가요?' --choices 흰색 빨간색 파란색 검은색
+# vLLM: complete candidate distribution
+python -m shorecrab.native.vllm_cli --model /path/to/a60-vllm \
+  --image assets/kitchen.png --question 'What color is the mug?' \
+  --choices white red blue black --output-mode probabilities
+
+# vLLM: highest-probability candidate or None
+python -m shorecrab.native.vllm_cli --model /path/to/a60-vllm \
+  --image assets/kitchen.png --question 'What color is the mug?' \
+  --choices white red blue black --output-mode select
+```
+
+[Both llama.cpp examples](docs/output-modes.md#llamacpp) use the same `--output-mode` switch. They prepare pixels and token IDs in Python, then run full inference in the C++ extension.
+
+## Application examples
+
+```bash
 python examples/catalogue.py assets/kitchen.png --items 'a mug' 'a chair' 'a phone'
 python examples/relative_depth.py assets/kitchen.png 'white mug' 'green apple'
 python examples/robot_observation.py assets/kitchen.png
 python examples/game_direction.py /path/to/game-frame.png
 ```
 
-확률은 후보 순서를 따릅니다. `answer`가 `null`이면 “해당 없음”이 가장 높은 것입니다. 현재 값은 보정되지 않은 모델 출력입니다. 범용 A60 호출과 기술 리포트의 게임 전용 헤드 결과를 구분해서 사용하세요.
+Questions are limited to 96 tokenizer tokens and each candidate to 48. Inputs beyond the supported limits are rejected. The technical report's game highlights use separate task-specific heads over A60 visual features; these generic reader examples do not reproduce those heads. Relative-depth choices are not metric depth maps, and robot observation examples do not establish control safety.
 
 ## License
 
-예제 코드와 추론 코드는 Apache-2.0입니다. 모델·데이터·제삼자 구성요소의 사용 조건은 별도입니다. [NOTICE](NOTICE.md)를 확인하세요.
+The inference and example code is Apache-2.0. Model, data and third-party component terms are separate; see [NOTICE](NOTICE.md).

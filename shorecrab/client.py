@@ -15,3 +15,7 @@ class CrabClient:
         if self.api_key:headers['Authorization']='Bearer '+self.api_key
         request=Request(self.base_url+'/v1/decisions',data=json.dumps(payload).encode(),headers=headers,method='POST')
         with urlopen(request,timeout=self.timeout) as response:return json.load(response)
+    def choose(self,image,question,choices):
+        """Select the largest joint probability, preserving a winning None outcome."""
+        from .outputs import select_answer
+        return select_answer(choices,self.score(image,question,choices))
