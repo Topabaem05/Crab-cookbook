@@ -1,0 +1,2250 @@
+{
+  "checkpoint_sha256": "427fbf2559e470543e19578b3f9a831c6cfed62782cbf91b4e04cad928aee3bb",
+  "protocol_sha256": "09b17040ff7560d4c319d1ff8d2032d600258a6374353dcc1db8210ddd4f96bf",
+  "episodes": [
+    {
+      "spec": {
+        "id": "road",
+        "seconds": 12,
+        "question": "Which object is closest to the camera?",
+        "choices": [
+          "red car",
+          "blue car",
+          "traffic cone",
+          "yellow barrier"
+        ]
+      },
+      "rows": [
+        {
+          "frame": 0,
+          "time": 0.0,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.24549153447151184,
+                0.4428842067718506,
+                0.1078580841422081,
+                0.2037660777568817
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "3fa1b07be9d0a29985f3c3e0b9665b3dd04fb0410d38e171e33ea3a2b96ac6d5",
+              "gold": 2,
+              "correct": false,
+              "reference_distances": [
+                20.07847105462763,
+                31.04307491283857,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.2037660777568817,
+                0.1078580841422081,
+                0.4428842067718506,
+                0.24549153447151184
+              ],
+              "unresolved": 0.0,
+              "answer": 2,
+              "input_sha256": "3fa1b07be9d0a29985f3c3e0b9665b3dd04fb0410d38e171e33ea3a2b96ac6d5",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                31.04307491283857,
+                20.07847105462763
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 5,
+          "time": 0.5,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.23000572621822357,
+                0.43551120162010193,
+                0.13028444349765778,
+                0.20419864356517792
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "0eaf23cb8b81355fcf329f47c05b432cb5a04fc6e50b66706994a3a91093abd0",
+              "gold": 2,
+              "correct": false,
+              "reference_distances": [
+                19.492605015290916,
+                30.623498489102715,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.20419864356517792,
+                0.13028444349765778,
+                0.43551120162010193,
+                0.23000572621822357
+              ],
+              "unresolved": 0.0,
+              "answer": 2,
+              "input_sha256": "0eaf23cb8b81355fcf329f47c05b432cb5a04fc6e50b66706994a3a91093abd0",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                30.623498489102715,
+                19.492605015290916
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 10,
+          "time": 1.0,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.23147417604923248,
+                0.4345487952232361,
+                0.12443087995052338,
+                0.20954611897468567
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "171917bff60ed3ee59ded4041d235009efc47e9b08b2471657b873d6c6466eaf",
+              "gold": 2,
+              "correct": false,
+              "reference_distances": [
+                18.906883025014928,
+                30.203937602964864,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.20954611897468567,
+                0.12443087995052338,
+                0.4345487952232361,
+                0.23147417604923248
+              ],
+              "unresolved": 0.0,
+              "answer": 2,
+              "input_sha256": "171917bff60ed3ee59ded4041d235009efc47e9b08b2471657b873d6c6466eaf",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                30.203937602964864,
+                18.906883025014928
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 15,
+          "time": 1.5,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.2146897315979004,
+                0.46637091040611267,
+                0.09515801072120667,
+                0.2237813025712967
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "4a681019d0c953c69f10df235b7de61036beb327a759d3fc55a20a5e623aad53",
+              "gold": 2,
+              "correct": false,
+              "reference_distances": [
+                18.32132556204665,
+                29.78439393565731,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.2237813025712967,
+                0.09515801072120667,
+                0.46637091040611267,
+                0.2146897315979004
+              ],
+              "unresolved": 0.0,
+              "answer": 2,
+              "input_sha256": "4a681019d0c953c69f10df235b7de61036beb327a759d3fc55a20a5e623aad53",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                29.78439393565731,
+                18.32132556204665
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 20,
+          "time": 2.0,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.2278793454170227,
+                0.46225622296333313,
+                0.10135281831026077,
+                0.20851163566112518
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "feee9b0467e804cae652abd84990828051d38afd786193b62829a0dc3cb7ab1d",
+              "gold": 2,
+              "correct": false,
+              "reference_distances": [
+                17.735942899823975,
+                29.364868225210056,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.20851163566112518,
+                0.10135281831026077,
+                0.46225622296333313,
+                0.2278793454170227
+              ],
+              "unresolved": 0.0,
+              "answer": 2,
+              "input_sha256": "feee9b0467e804cae652abd84990828051d38afd786193b62829a0dc3cb7ab1d",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                29.364868225210056,
+                17.735942899823975
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 25,
+          "time": 2.5,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.22488932311534882,
+                0.4704960584640503,
+                0.09903969615697861,
+                0.2055748999118805
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "89d74dc5031bc20911b311555aec2c044e2bf1bcd2c145fdfc1fcbfdb9eb1a22",
+              "gold": 2,
+              "correct": false,
+              "reference_distances": [
+                17.150755606102884,
+                28.945362306724455,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.2055748999118805,
+                0.09903969615697861,
+                0.4704960584640503,
+                0.22488932311534882
+              ],
+              "unresolved": 0.0,
+              "answer": 2,
+              "input_sha256": "89d74dc5031bc20911b311555aec2c044e2bf1bcd2c145fdfc1fcbfdb9eb1a22",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                28.945362306724455,
+                17.150755606102884
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 30,
+          "time": 3.0,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.24686439335346222,
+                0.46558108925819397,
+                0.09374132007360458,
+                0.19381321966648102
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "de7f1a0a983327b8bfacd0e7f2a60956d9543ce7979959cf4bc0edde53642a54",
+              "gold": 2,
+              "correct": false,
+              "reference_distances": [
+                16.565787148415183,
+                28.5258749137496,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.19381321966648102,
+                0.09374132007360458,
+                0.46558108925819397,
+                0.24686439335346222
+              ],
+              "unresolved": 0.0,
+              "answer": 2,
+              "input_sha256": "de7f1a0a983327b8bfacd0e7f2a60956d9543ce7979959cf4bc0edde53642a54",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                28.5258749137496,
+                16.565787148415183
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 35,
+          "time": 3.5,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.23465536534786224,
+                0.4729503095149994,
+                0.1007687896490097,
+                0.19162553548812866
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "4761fbe083ae9e6ca14600e5d4264262d3971fe1740e54e9f1282004cfcfb17c",
+              "gold": 2,
+              "correct": false,
+              "reference_distances": [
+                15.981055351275865,
+                28.10640578997653,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.19162553548812866,
+                0.1007687896490097,
+                0.4729503095149994,
+                0.23465536534786224
+              ],
+              "unresolved": 0.0,
+              "answer": 2,
+              "input_sha256": "4761fbe083ae9e6ca14600e5d4264262d3971fe1740e54e9f1282004cfcfb17c",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                28.10640578997653,
+                15.981055351275865
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 40,
+          "time": 4.0,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.2589636743068695,
+                0.4944622218608856,
+                0.07231075316667557,
+                0.1742633730173111
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "64f0ebb7b6c848a02b0ba15d0ebe95450204ae3a007b7b66f17362010011de32",
+              "gold": 2,
+              "correct": false,
+              "reference_distances": [
+                15.396591142600949,
+                27.686960174710087,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.1742633730173111,
+                0.07231075316667557,
+                0.4944622218608856,
+                0.2589636743068695
+              ],
+              "unresolved": 0.0,
+              "answer": 2,
+              "input_sha256": "64f0ebb7b6c848a02b0ba15d0ebe95450204ae3a007b7b66f17362010011de32",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                27.686960174710087,
+                15.396591142600949
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 45,
+          "time": 4.5,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.27661046385765076,
+                0.46945810317993164,
+                0.09109856933355331,
+                0.1628328263759613
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "d8caae30f234f45a65761b21edf1f8f3f91dac4cc188e3dfb235b493ee9c4bcd",
+              "gold": 2,
+              "correct": false,
+              "reference_distances": [
+                14.812427227831392,
+                27.267535795243557,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.1628328263759613,
+                0.09109856933355331,
+                0.46945810317993164,
+                0.27661046385765076
+              ],
+              "unresolved": 0.0,
+              "answer": 2,
+              "input_sha256": "d8caae30f234f45a65761b21edf1f8f3f91dac4cc188e3dfb235b493ee9c4bcd",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                27.267535795243557,
+                14.812427227831392
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 50,
+          "time": 5.0,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.2873566448688507,
+                0.44164904952049255,
+                0.11766524612903595,
+                0.15332908928394318
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "4d78901f68cbed5333fbc7598a53b4d09028942a888071471689085c138a6fd2",
+              "gold": 2,
+              "correct": false,
+              "reference_distances": [
+                14.228596839856275,
+                26.848135920168787,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.15332908928394318,
+                0.11766524612903595,
+                0.44164904952049255,
+                0.2873566448688507
+              ],
+              "unresolved": 0.0,
+              "answer": 2,
+              "input_sha256": "4d78901f68cbed5333fbc7598a53b4d09028942a888071471689085c138a6fd2",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                26.848135920168787,
+                14.228596839856275
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 55,
+          "time": 5.5,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.29444900155067444,
+                0.4056941568851471,
+                0.167263001203537,
+                0.13259382545948029
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "ee0d6f44e9c2ad258e3427c2a355a09121358fd77da2ec89fdacfbfcdb442660",
+              "gold": 2,
+              "correct": false,
+              "reference_distances": [
+                13.645144467644405,
+                26.42875940664972,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.13259382545948029,
+                0.167263001203537,
+                0.4056941568851471,
+                0.29444900155067444
+              ],
+              "unresolved": 0.0,
+              "answer": 2,
+              "input_sha256": "ee0d6f44e9c2ad258e3427c2a355a09121358fd77da2ec89fdacfbfcdb442660",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                26.42875940664972,
+                13.645144467644405
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 60,
+          "time": 6.0,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.32943201065063477,
+                0.38165393471717834,
+                0.16556668281555176,
+                0.12334734946489334
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "37d420ab402312597f16b18ea17fbcb747e161dd16790e159a0a79a2abe1f92d",
+              "gold": 2,
+              "correct": false,
+              "reference_distances": [
+                13.062122518615581,
+                26.009409731390626,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.12334734946489334,
+                0.16556668281555176,
+                0.38165393471717834,
+                0.32943201065063477
+              ],
+              "unresolved": 0.0,
+              "answer": 2,
+              "input_sha256": "37d420ab402312597f16b18ea17fbcb747e161dd16790e159a0a79a2abe1f92d",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                26.009409731390626,
+                13.062122518615581
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 65,
+          "time": 6.5,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.3158501982688904,
+                0.4227873384952545,
+                0.13219918310642242,
+                0.12916328012943268
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "ec7cb35bd15f7b0fffc0191b7d2733671a88e1990b95e31fd19683eca37b7cda",
+              "gold": 2,
+              "correct": false,
+              "reference_distances": [
+                12.479590095788497,
+                25.59008582869328,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.12916328012943268,
+                0.13219918310642242,
+                0.4227873384952545,
+                0.3158501982688904
+              ],
+              "unresolved": 0.0,
+              "answer": 2,
+              "input_sha256": "ec7cb35bd15f7b0fffc0191b7d2733671a88e1990b95e31fd19683eca37b7cda",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                25.59008582869328,
+                12.479590095788497
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 70,
+          "time": 7.0,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.28145119547843933,
+                0.36034324765205383,
+                0.25342434644699097,
+                0.10478109866380692
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "0c8bc41a2d6653757f8f6e796477adcac86c9dae9a5ee39d47bab197e1d8b7c0",
+              "gold": 2,
+              "correct": false,
+              "reference_distances": [
+                11.897617180311943,
+                25.170790199024864,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.10478109866380692,
+                0.25342434644699097,
+                0.36034324765205383,
+                0.28145119547843933
+              ],
+              "unresolved": 0.0,
+              "answer": 2,
+              "input_sha256": "0c8bc41a2d6653757f8f6e796477adcac86c9dae9a5ee39d47bab197e1d8b7c0",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                25.170790199024864,
+                11.897617180311943
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 75,
+          "time": 7.5,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.30382031202316284,
+                0.3540891706943512,
+                0.23190994560718536,
+                0.11018059402704239
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "76e22292b02ad45188948f79291734a42bc0689d64664b5d8cfedffb8f599ef9",
+              "gold": 2,
+              "correct": false,
+              "reference_distances": [
+                11.316293466339772,
+                24.751524279237227,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.11018059402704239,
+                0.23190994560718536,
+                0.3540891706943512,
+                0.30382031202316284
+              ],
+              "unresolved": 0.0,
+              "answer": 2,
+              "input_sha256": "76e22292b02ad45188948f79291734a42bc0689d64664b5d8cfedffb8f599ef9",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                24.751524279237227,
+                11.316293466339772
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 80,
+          "time": 8.0,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.1516825407743454,
+                0.2433072179555893,
+                0.555154025554657,
+                0.04985630139708519
+              ],
+              "unresolved": 0.0,
+              "answer": 2,
+              "input_sha256": "a2792f62367946120c414113f778749b382f72e5ee9994b0da69058d01c39352",
+              "gold": 2,
+              "correct": true,
+              "reference_distances": [
+                10.735722637677476,
+                24.3322896051095,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.04985630139708519,
+                0.555154025554657,
+                0.2433072179555893,
+                0.1516825407743454
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "a2792f62367946120c414113f778749b382f72e5ee9994b0da69058d01c39352",
+              "gold": 1,
+              "correct": true,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                24.3322896051095,
+                10.735722637677476
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 85,
+          "time": 8.5,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.3120402991771698,
+                0.2942851185798645,
+                0.2868523895740509,
+                0.10682224482297897
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "5455bffe933020afbc7dc05f1dd534be266d8b80fc93b9c580b47fe374558e80",
+              "gold": 2,
+              "correct": false,
+              "reference_distances": [
+                10.156032684642145,
+                23.913087820000918,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.10682224482297897,
+                0.2868523895740509,
+                0.2942851185798645,
+                0.3120402991771698
+              ],
+              "unresolved": 0.0,
+              "answer": 3,
+              "input_sha256": "5455bffe933020afbc7dc05f1dd534be266d8b80fc93b9c580b47fe374558e80",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                23.913087820000918,
+                10.156032684642145
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 90,
+          "time": 9.0,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.31393155455589294,
+                0.2781260907649994,
+                0.3096250295639038,
+                0.09831734746694565
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "8277c11b7c094b950f8bd3ac8808da4d0d7f6957e0ad81484c5124809bf237a8",
+              "gold": 0,
+              "correct": true,
+              "reference_distances": [
+                9.57738594856802,
+                23.493919385470413,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": true
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.09831734746694565,
+                0.3096250295639038,
+                0.2781260907649994,
+                0.31393155455589294
+              ],
+              "unresolved": 0.0,
+              "answer": 3,
+              "input_sha256": "8277c11b7c094b950f8bd3ac8808da4d0d7f6957e0ad81484c5124809bf237a8",
+              "gold": 3,
+              "correct": true,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                23.493919385470413,
+                9.57738594856802
+              ],
+              "near_tie": true
+            }
+          ]
+        },
+        {
+          "frame": 95,
+          "time": 9.5,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.39809104800224304,
+                0.36702975630760193,
+                0.10022099316120148,
+                0.13465827703475952
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "00f11d72f367e6871b17ac920b11ddb20acf10902fa13c590d7ca3a24a349514",
+              "gold": 0,
+              "correct": true,
+              "reference_distances": [
+                8.999981530819593,
+                23.074790086674838,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.13465827703475952,
+                0.10022099316120148,
+                0.36702975630760193,
+                0.39809104800224304
+              ],
+              "unresolved": 0.0,
+              "answer": 3,
+              "input_sha256": "00f11d72f367e6871b17ac920b11ddb20acf10902fa13c590d7ca3a24a349514",
+              "gold": 3,
+              "correct": true,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                23.074790086674838,
+                8.999981530819593
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 100,
+          "time": 10.0,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.38976210355758667,
+                0.3368875980377197,
+                0.1392882913351059,
+                0.1340620219707489
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "efa94c7e49748eccea556daa64c2e8208d292a3075403954b81d0eb21389c89e",
+              "gold": 0,
+              "correct": true,
+              "reference_distances": [
+                8.424077153035167,
+                22.65569536056375,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.1340620219707489,
+                0.1392882913351059,
+                0.3368875980377197,
+                0.38976210355758667
+              ],
+              "unresolved": 0.0,
+              "answer": 3,
+              "input_sha256": "efa94c7e49748eccea556daa64c2e8208d292a3075403954b81d0eb21389c89e",
+              "gold": 3,
+              "correct": true,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                22.65569536056375,
+                8.424077153035167
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 105,
+          "time": 10.5,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.3892965018749237,
+                0.33872732520103455,
+                0.14631178975105286,
+                0.1256643533706665
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "9b7b80d728a7f843828cb7aeddebd9f25a382d169a92d8b8c71b80155e50c3d5",
+              "gold": 0,
+              "correct": true,
+              "reference_distances": [
+                7.8500007803272664,
+                22.23664539631838,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.1256643533706665,
+                0.14631178975105286,
+                0.33872732520103455,
+                0.3892965018749237
+              ],
+              "unresolved": 0.0,
+              "answer": 3,
+              "input_sha256": "9b7b80d728a7f843828cb7aeddebd9f25a382d169a92d8b8c71b80155e50c3d5",
+              "gold": 3,
+              "correct": true,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                22.23664539631838,
+                7.8500007803272664
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 110,
+          "time": 11.0,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.3917997479438782,
+                0.3012085258960724,
+                0.2024582326412201,
+                0.10453350096940994
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "ed092d2462570f8c3afddcc808ba24a79f57614bbdab6e84c7cc6fac51ff7eb3",
+              "gold": 0,
+              "correct": true,
+              "reference_distances": [
+                7.278186032689166,
+                21.81763438061016,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.10453350096940994,
+                0.2024582326412201,
+                0.3012085258960724,
+                0.3917997479438782
+              ],
+              "unresolved": 0.0,
+              "answer": 3,
+              "input_sha256": "ed092d2462570f8c3afddcc808ba24a79f57614bbdab6e84c7cc6fac51ff7eb3",
+              "gold": 3,
+              "correct": true,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                21.81763438061016,
+                7.278186032689166
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 115,
+          "time": 11.5,
+          "orders": [
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "red car",
+                "blue car",
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.3412351906299591,
+                0.27132678031921387,
+                0.2957777976989746,
+                0.09166020154953003
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "6cc3875531f47395768590ae48f8fa181fcc816ae721427658c274c2aad62a72",
+              "gold": 0,
+              "correct": true,
+              "reference_distances": [
+                6.709210914218655,
+                21.3986724452045,
+                9.78419135355994,
+                24.312607838506743
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which object is closest to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone",
+                "blue car",
+                "red car"
+              ],
+              "probabilities": [
+                0.09166020154953003,
+                0.2957777976989746,
+                0.27132678031921387,
+                0.3412351906299591
+              ],
+              "unresolved": 0.0,
+              "answer": 3,
+              "input_sha256": "6cc3875531f47395768590ae48f8fa181fcc816ae721427658c274c2aad62a72",
+              "gold": 3,
+              "correct": true,
+              "reference_distances": [
+                24.312607838506743,
+                9.78419135355994,
+                21.3986724452045,
+                6.709210914218655
+              ],
+              "near_tie": false
+            }
+          ]
+        }
+      ],
+      "forward_correct": 7,
+      "both_orders_correct": 14,
+      "n": 24
+    },
+    {
+      "spec": {
+        "id": "parking",
+        "seconds": 8,
+        "question": "Which obstacle is closer to the camera?",
+        "choices": [
+          "traffic cone",
+          "yellow barrier"
+        ]
+      },
+      "rows": [
+        {
+          "frame": 0,
+          "time": 0.0,
+          "orders": [
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.39231905341148376,
+                0.6076808571815491
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "fa47de2e6a62de9610baacc21993d91935b6eb6066dcabde703ec6cbe75ff1a4",
+              "gold": 0,
+              "correct": false,
+              "reference_distances": [
+                6.099704904141063,
+                8.124432397236589
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone"
+              ],
+              "probabilities": [
+                0.6076808571815491,
+                0.39231905341148376
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "fa47de2e6a62de9610baacc21993d91935b6eb6066dcabde703ec6cbe75ff1a4",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                8.124432397236589,
+                6.099704904141063
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 5,
+          "time": 0.5,
+          "orders": [
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.24028754234313965,
+                0.7597124576568604
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "dcc85b4d7f42eb927abfdc26c736131a52be36dc2da1cf246f2b1a98f52b5d9b",
+              "gold": 0,
+              "correct": false,
+              "reference_distances": [
+                6.074118158298684,
+                7.8771404657424995
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone"
+              ],
+              "probabilities": [
+                0.7597124576568604,
+                0.24028754234313965
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "dcc85b4d7f42eb927abfdc26c736131a52be36dc2da1cf246f2b1a98f52b5d9b",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                7.8771404657424995,
+                6.074118158298684
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 10,
+          "time": 1.0,
+          "orders": [
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.20633098483085632,
+                0.7936689853668213
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "f6519cea76ca5e22a6d3bd86c6d4703369d1a69fb6bc75b7dde397eec812f543",
+              "gold": 0,
+              "correct": false,
+              "reference_distances": [
+                6.072218561496232,
+                7.640726646574123
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone"
+              ],
+              "probabilities": [
+                0.7936689853668213,
+                0.20633098483085632
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "f6519cea76ca5e22a6d3bd86c6d4703369d1a69fb6bc75b7dde397eec812f543",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                7.640726646574123,
+                6.072218561496232
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 15,
+          "time": 1.5,
+          "orders": [
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.3929029405117035,
+                0.6070970892906189
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "7b3b71b2a3b50ecfc45bd86898e8590318703b0ef490ef3a363a38044d89d372",
+              "gold": 0,
+              "correct": false,
+              "reference_distances": [
+                6.094028261140444,
+                7.416230169231495
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone"
+              ],
+              "probabilities": [
+                0.6070970892906189,
+                0.3929029405117035
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "7b3b71b2a3b50ecfc45bd86898e8590318703b0ef490ef3a363a38044d89d372",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                7.416230169231495,
+                6.094028261140444
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 20,
+          "time": 2.0,
+          "orders": [
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.166660338640213,
+                0.8333396911621094
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "caeb23483f61ee713e1057e44b36abd97878790bac09a4197778a371b37510c5",
+              "gold": 0,
+              "correct": false,
+              "reference_distances": [
+                6.13929457484338,
+                7.204766589135807
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone"
+              ],
+              "probabilities": [
+                0.8333396911621094,
+                0.166660338640213
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "caeb23483f61ee713e1057e44b36abd97878790bac09a4197778a371b37510c5",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                7.204766589135807,
+                6.13929457484338
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 25,
+          "time": 2.5,
+          "orders": [
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.16537050902843475,
+                0.834629476070404
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "f8d717aa96854efd1945aea81fc1c8f6c783d67f64cb120a8264794f5eaa30dd",
+              "gold": 0,
+              "correct": false,
+              "reference_distances": [
+                6.207504398468831,
+                7.007514785685678
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone"
+              ],
+              "probabilities": [
+                0.834629476070404,
+                0.16537050902843475
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "f8d717aa96854efd1945aea81fc1c8f6c783d67f64cb120a8264794f5eaa30dd",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                7.007514785685678,
+                6.207504398468831
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 30,
+          "time": 3.0,
+          "orders": [
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.3134414553642273,
+                0.6865584850311279
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "9e545afbed01b6f98d242e327aa34679d7a63098d894ac92e649e3533a2b514d",
+              "gold": 0,
+              "correct": false,
+              "reference_distances": [
+                6.2979122661138165,
+                6.825707380784254
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone"
+              ],
+              "probabilities": [
+                0.6865584850311279,
+                0.3134414553642273
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "9e545afbed01b6f98d242e327aa34679d7a63098d894ac92e649e3533a2b514d",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                6.825707380784254,
+                6.2979122661138165
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 35,
+          "time": 3.5,
+          "orders": [
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.2515932321548462,
+                0.748406708240509
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "6dc49842955f6b74fd23680cf1e491b2fddcccc73f06fc71af5192f4cf74f0e0",
+              "gold": 0,
+              "correct": false,
+              "reference_distances": [
+                6.409578956398008,
+                6.660609165576241
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone"
+              ],
+              "probabilities": [
+                0.748406708240509,
+                0.2515932321548462
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "6dc49842955f6b74fd23680cf1e491b2fddcccc73f06fc71af5192f4cf74f0e0",
+              "gold": 1,
+              "correct": false,
+              "reference_distances": [
+                6.660609165576241,
+                6.409578956398008
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 40,
+          "time": 4.0,
+          "orders": [
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.19816815853118896,
+                0.8018319010734558
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "ba13bed799f6171c123498686036870909949404bd896039d938c373321bde4b",
+              "gold": 1,
+              "correct": true,
+              "reference_distances": [
+                6.541415813115126,
+                6.513490963186454
+              ],
+              "near_tie": true
+            },
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone"
+              ],
+              "probabilities": [
+                0.8018319010734558,
+                0.19816815853118896
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "ba13bed799f6171c123498686036870909949404bd896039d938c373321bde4b",
+              "gold": 0,
+              "correct": true,
+              "reference_distances": [
+                6.513490963186454,
+                6.541415813115126
+              ],
+              "near_tie": true
+            }
+          ]
+        },
+        {
+          "frame": 45,
+          "time": 4.5,
+          "orders": [
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.1130753606557846,
+                0.886924684047699
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "0b5a81daf298a08d0b8ef740cc5c1170ef4285dfe1c6bbf8428d43888e3551b3",
+              "gold": 1,
+              "correct": true,
+              "reference_distances": [
+                6.692230957659678,
+                6.385595380347179
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone"
+              ],
+              "probabilities": [
+                0.886924684047699,
+                0.1130753606557846
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "0b5a81daf298a08d0b8ef740cc5c1170ef4285dfe1c6bbf8428d43888e3551b3",
+              "gold": 0,
+              "correct": true,
+              "reference_distances": [
+                6.385595380347179,
+                6.692230957659678
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 50,
+          "time": 5.0,
+          "orders": [
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.20557495951652527,
+                0.7944250106811523
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "e5297f5f866fa5a62f7aea60311e797d3200545e50ec3a4e9ed1ef4c818a9666",
+              "gold": 1,
+              "correct": true,
+              "reference_distances": [
+                6.860772878938907,
+                6.278097471838564
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone"
+              ],
+              "probabilities": [
+                0.7944250106811523,
+                0.20557495951652527
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "e5297f5f866fa5a62f7aea60311e797d3200545e50ec3a4e9ed1ef4c818a9666",
+              "gold": 0,
+              "correct": true,
+              "reference_distances": [
+                6.278097471838564,
+                6.860772878938907
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 55,
+          "time": 5.5,
+          "orders": [
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.23013487458229065,
+                0.769865095615387
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "89d4cece135e6aaa9538051df820e66a1ac9816d96260e6b0adebcd91289fb73",
+              "gold": 1,
+              "correct": true,
+              "reference_distances": [
+                7.0457695645861085,
+                6.192059667145165
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone"
+              ],
+              "probabilities": [
+                0.769865095615387,
+                0.23013487458229065
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "89d4cece135e6aaa9538051df820e66a1ac9816d96260e6b0adebcd91289fb73",
+              "gold": 0,
+              "correct": true,
+              "reference_distances": [
+                6.192059667145165,
+                7.0457695645861085
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 60,
+          "time": 6.0,
+          "orders": [
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.24387092888355255,
+                0.7561290860176086
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "3466f4430e0537fa06dbae30cabfa243608069a31304d6200a1b199584b33dc7",
+              "gold": 1,
+              "correct": true,
+              "reference_distances": [
+                7.24596086981745,
+                6.128385858464561
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone"
+              ],
+              "probabilities": [
+                0.7561290860176086,
+                0.24387092888355255
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "3466f4430e0537fa06dbae30cabfa243608069a31304d6200a1b199584b33dc7",
+              "gold": 0,
+              "correct": true,
+              "reference_distances": [
+                6.128385858464561,
+                7.24596086981745
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 65,
+          "time": 6.5,
+          "orders": [
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.42260631918907166,
+                0.577393651008606
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "8919b2cfdfaf1f5f4a0e9e3b3f720cbc6a6e654204d55f03b479f4c718de6fca",
+              "gold": 1,
+              "correct": true,
+              "reference_distances": [
+                7.460123658855587,
+                6.087777824201275
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone"
+              ],
+              "probabilities": [
+                0.577393651008606,
+                0.42260631918907166
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "8919b2cfdfaf1f5f4a0e9e3b3f720cbc6a6e654204d55f03b479f4c718de6fca",
+              "gold": 0,
+              "correct": true,
+              "reference_distances": [
+                6.087777824201275,
+                7.460123658855587
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 70,
+          "time": 7.0,
+          "orders": [
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.46357181668281555,
+                0.5364281535148621
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "c88f527758402125d9be7f736b20e02e6b53c9fb16cddcc17bf0f30172d4a1fc",
+              "gold": 1,
+              "correct": true,
+              "reference_distances": [
+                7.687089909105763,
+                6.070698452813275
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone"
+              ],
+              "probabilities": [
+                0.5364281535148621,
+                0.46357181668281555
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "c88f527758402125d9be7f736b20e02e6b53c9fb16cddcc17bf0f30172d4a1fc",
+              "gold": 0,
+              "correct": true,
+              "reference_distances": [
+                6.070698452813275,
+                7.687089909105763
+              ],
+              "near_tie": false
+            }
+          ]
+        },
+        {
+          "frame": 75,
+          "time": 7.5,
+          "orders": [
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "traffic cone",
+                "yellow barrier"
+              ],
+              "probabilities": [
+                0.4942462742328644,
+                0.505753755569458
+              ],
+              "unresolved": 0.0,
+              "answer": 1,
+              "input_sha256": "241832c1aa2c43a908692ce5d9e38b66876bd1ff44b173d18add48d00acc2662",
+              "gold": 1,
+              "correct": true,
+              "reference_distances": [
+                7.925760719419372,
+                6.077346123016832
+              ],
+              "near_tie": false
+            },
+            {
+              "question": "Which obstacle is closer to the camera?",
+              "choices": [
+                "yellow barrier",
+                "traffic cone"
+              ],
+              "probabilities": [
+                0.505753755569458,
+                0.4942462742328644
+              ],
+              "unresolved": 0.0,
+              "answer": 0,
+              "input_sha256": "241832c1aa2c43a908692ce5d9e38b66876bd1ff44b173d18add48d00acc2662",
+              "gold": 0,
+              "correct": true,
+              "reference_distances": [
+                6.077346123016832,
+                7.925760719419372
+              ],
+              "near_tie": false
+            }
+          ]
+        }
+      ],
+      "forward_correct": 8,
+      "both_orders_correct": 16,
+      "n": 16
+    }
+  ],
+  "quality_claim": false,
+  "mode": "Original A60, CPU FP32, no new head or training"
+}

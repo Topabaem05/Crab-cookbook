@@ -13,6 +13,8 @@ The llama.cpp path requires this extension build. Standard upstream `llama-cli`,
 
 Both engines expose `--output-mode probabilities` and `--output-mode select`. See [the two complete examples per engine](output-modes.md). The default `full` output retains the original interface.
 
+Fresh traffic-frame verification: [24 native CLI calls and 2 invalid-input checks](driving-depth.md#independent-engine-checks), covering both output modes and candidate-order reversal.
+
 ## vLLM
 
 Use a separate Python environment from the cookbook's `serve` extra, since this vLLM revision requires PyTorch 2.13.0.

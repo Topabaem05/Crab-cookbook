@@ -1,0 +1,501 @@
+{
+  "status": "passed",
+  "checked_at": 1791034617.2266,
+  "checkpoint_sha256": "427fbf2559e470543e19578b3f9a831c6cfed62782cbf91b4e04cad928aee3bb",
+  "device": "macOS CPU",
+  "dtype": "FP32",
+  "real_cli_processes": 26,
+  "cases": [
+    {
+      "case": "road:0",
+      "order": "forward",
+      "engine": "llama.cpp",
+      "mode": "probabilities",
+      "output": {
+        "choices": [
+          "red car",
+          "blue car",
+          "traffic cone",
+          "yellow barrier"
+        ],
+        "probabilities": [
+          0.245491907,
+          0.4428845048,
+          0.1078577414,
+          0.2037658244
+        ],
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 3.725284881683777e-07,
+      "process_seconds": 2.4203342919936404,
+      "input_sha256": "3fa1b07be9d0a29985f3c3e0b9665b3dd04fb0410d38e171e33ea3a2b96ac6d5"
+    },
+    {
+      "case": "road:0",
+      "order": "forward",
+      "engine": "llama.cpp",
+      "mode": "select",
+      "output": {
+        "answer": "blue car",
+        "answer_index": 1,
+        "probability": 0.4428845048,
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 2.98028149436913e-07,
+      "process_seconds": 2.226954084006138,
+      "input_sha256": "3fa1b07be9d0a29985f3c3e0b9665b3dd04fb0410d38e171e33ea3a2b96ac6d5"
+    },
+    {
+      "case": "road:0",
+      "order": "forward",
+      "engine": "vLLM",
+      "mode": "probabilities",
+      "output": {
+        "choices": [
+          "red car",
+          "blue car",
+          "traffic cone",
+          "yellow barrier"
+        ],
+        "probabilities": [
+          0.24549153447151184,
+          0.4428842067718506,
+          0.1078580841422081,
+          0.2037660777568817
+        ],
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 0.0,
+      "process_seconds": 17.290386457985733,
+      "input_sha256": "3fa1b07be9d0a29985f3c3e0b9665b3dd04fb0410d38e171e33ea3a2b96ac6d5"
+    },
+    {
+      "case": "road:0",
+      "order": "forward",
+      "engine": "vLLM",
+      "mode": "select",
+      "output": {
+        "answer": "blue car",
+        "answer_index": 1,
+        "probability": 0.4428842067718506,
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 0.0,
+      "process_seconds": 14.4581640829565,
+      "input_sha256": "3fa1b07be9d0a29985f3c3e0b9665b3dd04fb0410d38e171e33ea3a2b96ac6d5"
+    },
+    {
+      "case": "road:0",
+      "order": "reverse",
+      "engine": "llama.cpp",
+      "mode": "probabilities",
+      "output": {
+        "choices": [
+          "yellow barrier",
+          "traffic cone",
+          "blue car",
+          "red car"
+        ],
+        "probabilities": [
+          0.2037658244,
+          0.1078577414,
+          0.4428845048,
+          0.245491907
+        ],
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 3.725284881683777e-07,
+      "process_seconds": 2.639888832985889,
+      "input_sha256": "3fa1b07be9d0a29985f3c3e0b9665b3dd04fb0410d38e171e33ea3a2b96ac6d5"
+    },
+    {
+      "case": "road:0",
+      "order": "reverse",
+      "engine": "llama.cpp",
+      "mode": "select",
+      "output": {
+        "answer": "blue car",
+        "answer_index": 2,
+        "probability": 0.4428845048,
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 2.98028149436913e-07,
+      "process_seconds": 2.245698207989335,
+      "input_sha256": "3fa1b07be9d0a29985f3c3e0b9665b3dd04fb0410d38e171e33ea3a2b96ac6d5"
+    },
+    {
+      "case": "road:0",
+      "order": "reverse",
+      "engine": "vLLM",
+      "mode": "probabilities",
+      "output": {
+        "choices": [
+          "yellow barrier",
+          "traffic cone",
+          "blue car",
+          "red car"
+        ],
+        "probabilities": [
+          0.2037660777568817,
+          0.1078580841422081,
+          0.4428842067718506,
+          0.24549153447151184
+        ],
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 0.0,
+      "process_seconds": 14.278011916961987,
+      "input_sha256": "3fa1b07be9d0a29985f3c3e0b9665b3dd04fb0410d38e171e33ea3a2b96ac6d5"
+    },
+    {
+      "case": "road:0",
+      "order": "reverse",
+      "engine": "vLLM",
+      "mode": "select",
+      "output": {
+        "answer": "blue car",
+        "answer_index": 2,
+        "probability": 0.4428842067718506,
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 0.0,
+      "process_seconds": 14.05397104198346,
+      "input_sha256": "3fa1b07be9d0a29985f3c3e0b9665b3dd04fb0410d38e171e33ea3a2b96ac6d5"
+    },
+    {
+      "case": "road:60",
+      "order": "forward",
+      "engine": "llama.cpp",
+      "mode": "probabilities",
+      "output": {
+        "choices": [
+          "red car",
+          "blue car",
+          "traffic cone",
+          "yellow barrier"
+        ],
+        "probabilities": [
+          0.3294323981,
+          0.3816551268,
+          0.1655643582,
+          0.1233480871
+        ],
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 2.324615551746456e-06,
+      "process_seconds": 2.179190374969039,
+      "input_sha256": "37d420ab402312597f16b18ea17fbcb747e161dd16790e159a0a79a2abe1f92d"
+    },
+    {
+      "case": "road:60",
+      "order": "forward",
+      "engine": "llama.cpp",
+      "mode": "select",
+      "output": {
+        "answer": "blue car",
+        "answer_index": 1,
+        "probability": 0.3816551268,
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 1.192082821677154e-06,
+      "process_seconds": 2.172415666980669,
+      "input_sha256": "37d420ab402312597f16b18ea17fbcb747e161dd16790e159a0a79a2abe1f92d"
+    },
+    {
+      "case": "road:60",
+      "order": "forward",
+      "engine": "vLLM",
+      "mode": "probabilities",
+      "output": {
+        "choices": [
+          "red car",
+          "blue car",
+          "traffic cone",
+          "yellow barrier"
+        ],
+        "probabilities": [
+          0.32943201065063477,
+          0.38165393471717834,
+          0.16556668281555176,
+          0.12334734946489334
+        ],
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 0.0,
+      "process_seconds": 13.848419082991313,
+      "input_sha256": "37d420ab402312597f16b18ea17fbcb747e161dd16790e159a0a79a2abe1f92d"
+    },
+    {
+      "case": "road:60",
+      "order": "forward",
+      "engine": "vLLM",
+      "mode": "select",
+      "output": {
+        "answer": "blue car",
+        "answer_index": 1,
+        "probability": 0.38165393471717834,
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 0.0,
+      "process_seconds": 14.093351957970299,
+      "input_sha256": "37d420ab402312597f16b18ea17fbcb747e161dd16790e159a0a79a2abe1f92d"
+    },
+    {
+      "case": "road:60",
+      "order": "reverse",
+      "engine": "llama.cpp",
+      "mode": "probabilities",
+      "output": {
+        "choices": [
+          "yellow barrier",
+          "traffic cone",
+          "blue car",
+          "red car"
+        ],
+        "probabilities": [
+          0.1233480871,
+          0.1655643582,
+          0.3816551268,
+          0.3294323981
+        ],
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 2.324615551746456e-06,
+      "process_seconds": 2.2817648330237716,
+      "input_sha256": "37d420ab402312597f16b18ea17fbcb747e161dd16790e159a0a79a2abe1f92d"
+    },
+    {
+      "case": "road:60",
+      "order": "reverse",
+      "engine": "llama.cpp",
+      "mode": "select",
+      "output": {
+        "answer": "blue car",
+        "answer_index": 2,
+        "probability": 0.3816551268,
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 1.192082821677154e-06,
+      "process_seconds": 2.2305370829999447,
+      "input_sha256": "37d420ab402312597f16b18ea17fbcb747e161dd16790e159a0a79a2abe1f92d"
+    },
+    {
+      "case": "road:60",
+      "order": "reverse",
+      "engine": "vLLM",
+      "mode": "probabilities",
+      "output": {
+        "choices": [
+          "yellow barrier",
+          "traffic cone",
+          "blue car",
+          "red car"
+        ],
+        "probabilities": [
+          0.12334734946489334,
+          0.16556668281555176,
+          0.38165393471717834,
+          0.32943201065063477
+        ],
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 0.0,
+      "process_seconds": 13.323295790993143,
+      "input_sha256": "37d420ab402312597f16b18ea17fbcb747e161dd16790e159a0a79a2abe1f92d"
+    },
+    {
+      "case": "road:60",
+      "order": "reverse",
+      "engine": "vLLM",
+      "mode": "select",
+      "output": {
+        "answer": "blue car",
+        "answer_index": 2,
+        "probability": 0.38165393471717834,
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 0.0,
+      "process_seconds": 12.723133958992548,
+      "input_sha256": "37d420ab402312597f16b18ea17fbcb747e161dd16790e159a0a79a2abe1f92d"
+    },
+    {
+      "case": "parking:0",
+      "order": "forward",
+      "engine": "llama.cpp",
+      "mode": "probabilities",
+      "output": {
+        "choices": [
+          "traffic cone",
+          "yellow barrier"
+        ],
+        "probabilities": [
+          0.3923154771,
+          0.6076845527
+        ],
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 3.6955184509190886e-06,
+      "process_seconds": 2.0700151250348426,
+      "input_sha256": "fa47de2e6a62de9610baacc21993d91935b6eb6066dcabde703ec6cbe75ff1a4"
+    },
+    {
+      "case": "parking:0",
+      "order": "forward",
+      "engine": "llama.cpp",
+      "mode": "select",
+      "output": {
+        "answer": "yellow barrier",
+        "answer_index": 1,
+        "probability": 0.6076845527,
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 3.6955184509190886e-06,
+      "process_seconds": 1.9987018749816343,
+      "input_sha256": "fa47de2e6a62de9610baacc21993d91935b6eb6066dcabde703ec6cbe75ff1a4"
+    },
+    {
+      "case": "parking:0",
+      "order": "forward",
+      "engine": "vLLM",
+      "mode": "probabilities",
+      "output": {
+        "choices": [
+          "traffic cone",
+          "yellow barrier"
+        ],
+        "probabilities": [
+          0.39231905341148376,
+          0.6076808571815491
+        ],
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 0.0,
+      "process_seconds": 12.853386166971177,
+      "input_sha256": "fa47de2e6a62de9610baacc21993d91935b6eb6066dcabde703ec6cbe75ff1a4"
+    },
+    {
+      "case": "parking:0",
+      "order": "forward",
+      "engine": "vLLM",
+      "mode": "select",
+      "output": {
+        "answer": "yellow barrier",
+        "answer_index": 1,
+        "probability": 0.6076808571815491,
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 0.0,
+      "process_seconds": 12.991050165961497,
+      "input_sha256": "fa47de2e6a62de9610baacc21993d91935b6eb6066dcabde703ec6cbe75ff1a4"
+    },
+    {
+      "case": "parking:0",
+      "order": "reverse",
+      "engine": "llama.cpp",
+      "mode": "probabilities",
+      "output": {
+        "choices": [
+          "yellow barrier",
+          "traffic cone"
+        ],
+        "probabilities": [
+          0.6076845527,
+          0.3923154771
+        ],
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 3.6955184509190886e-06,
+      "process_seconds": 2.113461458007805,
+      "input_sha256": "fa47de2e6a62de9610baacc21993d91935b6eb6066dcabde703ec6cbe75ff1a4"
+    },
+    {
+      "case": "parking:0",
+      "order": "reverse",
+      "engine": "llama.cpp",
+      "mode": "select",
+      "output": {
+        "answer": "yellow barrier",
+        "answer_index": 0,
+        "probability": 0.6076845527,
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 3.6955184509190886e-06,
+      "process_seconds": 2.1342503339983523,
+      "input_sha256": "fa47de2e6a62de9610baacc21993d91935b6eb6066dcabde703ec6cbe75ff1a4"
+    },
+    {
+      "case": "parking:0",
+      "order": "reverse",
+      "engine": "vLLM",
+      "mode": "probabilities",
+      "output": {
+        "choices": [
+          "yellow barrier",
+          "traffic cone"
+        ],
+        "probabilities": [
+          0.6076808571815491,
+          0.39231905341148376
+        ],
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 0.0,
+      "process_seconds": 13.739630458992906,
+      "input_sha256": "fa47de2e6a62de9610baacc21993d91935b6eb6066dcabde703ec6cbe75ff1a4"
+    },
+    {
+      "case": "parking:0",
+      "order": "reverse",
+      "engine": "vLLM",
+      "mode": "select",
+      "output": {
+        "answer": "yellow barrier",
+        "answer_index": 0,
+        "probability": 0.6076808571815491,
+        "none_probability": 0.0,
+        "calibrated": false
+      },
+      "max_probability_error": 0.0,
+      "process_seconds": 13.251043458993081,
+      "input_sha256": "fa47de2e6a62de9610baacc21993d91935b6eb6066dcabde703ec6cbe75ff1a4"
+    }
+  ],
+  "negative": [
+    {
+      "engine": "llama.cpp",
+      "single_candidate_rejected": true,
+      "returncode": 1
+    },
+    {
+      "engine": "vLLM",
+      "single_candidate_rejected": true,
+      "returncode": 1
+    }
+  ],
+  "max_probability_error": 3.6955184509190886e-06,
+  "caveat": "Custom llama.cpp libllama extension and vLLM pooling worker; no upstream stock-server or GPU/quantization validation. Startup-inclusive process times are not inference latency.",
+  "protocol_sha256": "09b17040ff7560d4c319d1ff8d2032d600258a6374353dcc1db8210ddd4f96bf"
+}

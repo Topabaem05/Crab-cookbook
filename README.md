@@ -109,12 +109,15 @@ python -m shorecrab.native.vllm_cli --model /path/to/a60-vllm \
 ```bash
 python examples/catalogue.py assets/kitchen.png --items 'a mug' 'a chair' 'a phone'
 python examples/relative_depth.py assets/kitchen.png 'white mug' 'green apple'
+python examples/nearest_object.py assets/driving.png
 python examples/robot_observation.py assets/kitchen.png
 python examples/game_direction.py /path/to/game-frame.png
 ```
 
 Questions are limited to 96 tokenizer tokens and each candidate to 48. Inputs beyond the supported limits are rejected. The technical report's game highlights use separate task-specific heads over A60 visual features; these generic reader examples do not reproduce those heads. Relative-depth choices are not metric depth maps, and robot observation examples do not establish control safety.
 
+[Driving and parking example, complete results and fresh native checks](docs/driving-depth.md).
+
 ## License
 
-The inference and example code is Apache-2.0. Model, data and third-party component terms are separate; see [NOTICE](NOTICE.md).
+The inference and example code, and the original driving/parking demonstration artwork, are licensed under [Apache-2.0](LICENSE). Model, data and third-party component terms are separate; see [NOTICE](NOTICE.md).
