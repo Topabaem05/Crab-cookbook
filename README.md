@@ -67,11 +67,12 @@ python examples/select_answer.py assets/kitchen.png
 
 ## Run the model locally
 
-You need an authorized A60 inference bundle. Weights are not included in this repository; the model-card link does not imply that weight downloads are currently available.
+Download the public A60 inference bundle from [Hugging Face](https://huggingface.co/Haverbex/ShoreCrab-128M). **The weights are for non-commercial research** under the terms shipped with the model. Cookbook code uses Apache-2.0. This is a research preview; the abstention release criterion did not pass.
 
 ```bash
-python -m pip install -e '.[serve]'
-crab-serve --bundle /path/to/a60-inference-bundle --device cpu
+python -m pip install -e '.[serve]' huggingface_hub
+hf download Haverbex/ShoreCrab-128M --include 'bundle/*' 'LICENSE.md' 'notices/*' --local-dir model
+crab-serve --bundle model/bundle --device cpu
 ```
 
 A bundle contains `manifest.json`, `model.safetensors` and `tokenizer/`. The loader verifies file SHA256 values and executes in FP32. It does not silently fall back to another device.
